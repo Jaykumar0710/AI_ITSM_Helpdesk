@@ -1,0 +1,7 @@
+Task,N,Accuracy,Macro_Precision,Macro_Recall,Macro_F1
+Classifier category,3,1.0,1.0,1.0,1.0
+Classifier priority,3,0.0,0.0,0.0,0.0
+Analyzer sentiment,3,0.6666666666666666,0.3333333333333333,0.5,0.4
+Analyzer urgency,3,0.0,0.0,0.0,0.0
+Analyzer priority mapped,3,0.0,0.0,0.0,0.0
+Analyzer escalation,3,1.0,1.0,1.0,1.0

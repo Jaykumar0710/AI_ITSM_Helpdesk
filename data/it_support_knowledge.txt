@@ -1,0 +1,154 @@
+
+==================================================
+CATEGORY: WIFI CONNECTIVITY
+==================================================
+
+Issue:
+A user is connected to Wi-Fi but cannot access the internet.
+
+Possible Causes:
+- Incorrect IP address configuration.
+- DNS resolution failure.
+- Router connectivity problems.
+- Network adapter issues.
+- Proxy configuration problems.
+
+Troubleshooting Steps:
+
+1. Verify that Wi-Fi is enabled on the device.
+2. Check whether other devices can access the internet.
+3. Disconnect and reconnect to the Wi-Fi network.
+4. Restart the wireless router if authorized.
+5. Open Command Prompt and execute:
+
+   ipconfig
+
+6. Check whether the device has a valid IPv4 address.
+7. Flush the DNS cache:
+
+   ipconfig /flushdns
+
+8. Test connectivity:
+
+   ping 8.8.8.8
+
+9. Test DNS resolution:
+
+   nslookup google.com
+
+10. If the problem persists, contact IT support.
+
+Resolution:
+If the issue is caused by DNS cache corruption, flushing the DNS
+cache may restore connectivity.
+
+==================================================
+CATEGORY: PASSWORD RESET
+==================================================
+
+Issue:
+A user cannot log in because the password is incorrect or expired.
+
+Possible Causes:
+- Incorrect password.
+- Expired password.
+- Account lockout.
+- Keyboard layout mismatch.
+- Authentication service issue.
+
+Troubleshooting Steps:
+
+1. Verify the username.
+2. Check the keyboard layout and Caps Lock.
+3. Confirm that the password has not expired.
+4. Use the organization's approved password reset portal.
+5. If the account is locked, contact the IT administrator.
+6. Never share passwords or OTPs with support personnel.
+
+Resolution:
+Use the approved password reset process or request assistance
+from the authorized IT administrator.
+
+==================================================
+CATEGORY: VPN CONNECTION
+==================================================
+
+Issue:
+A user cannot connect to the organization's VPN.
+
+Possible Causes:
+- Internet connectivity issue.
+- Incorrect VPN configuration.
+- Expired authentication credentials.
+- VPN client malfunction.
+- Firewall restrictions.
+
+Troubleshooting Steps:
+
+1. Verify that internet connectivity is working.
+2. Restart the VPN client.
+3. Verify the VPN server address.
+4. Check the VPN client for authentication errors.
+5. Confirm that the device date and time are correct.
+6. Update the VPN client if approved by IT.
+7. Contact IT support if the issue persists.
+
+Resolution:
+Correct the VPN configuration or authentication issue
+through the organization's authorized IT support process.
+
+==================================================
+CATEGORY: PRINTER TROUBLESHOOTING
+==================================================
+
+Issue:
+A printer is not printing documents.
+
+Possible Causes:
+- Printer is offline.
+- Paper jam.
+- Empty toner or ink.
+- Print queue blockage.
+- Printer driver issue.
+- Network connectivity issue.
+
+Troubleshooting Steps:
+
+1. Verify that the printer is powered on.
+2. Check the printer display for error messages.
+3. Confirm that paper and toner are available.
+4. Verify the printer connection.
+5. Open the print queue.
+6. Cancel stuck print jobs if authorized.
+7. Restart the printer.
+8. Contact IT support if the problem persists.
+
+Resolution:
+Resolve the printer hardware, connectivity, or print queue issue.
+
+==================================================
+CATEGORY: SOFTWARE INSTALLATION
+==================================================
+
+Issue:
+A user cannot install required software.
+
+Possible Causes:
+- Insufficient permissions.
+- Incompatible operating system.
+- Missing dependencies.
+- Insufficient disk space.
+- Unauthorized software installation.
+
+Troubleshooting Steps:
+
+1. Verify the software requirements.
+2. Check available disk space.
+3. Download software only from approved sources.
+4. Verify that the software is authorized by the organization.
+5. Contact IT support if administrator permissions are required.
+6. Do not bypass organizational security policies.
+
+Resolution:
+Install approved software using the organization's
+authorized software deployment process.

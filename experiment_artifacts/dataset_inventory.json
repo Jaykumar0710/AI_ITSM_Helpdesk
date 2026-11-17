@@ -1,0 +1,154 @@
+{
+  "generated_at_local": "2026-11-13T12:07:45.531622+05:30",
+  "project_root": "C:\\Users\\jaygu\\OneDrive\\Desktop\\AI_ITSM_Helpdesk",
+  "database_path_exists": true,
+  "knowledge_data_directory_exists": true,
+  "privacy_note": "Aggregate metadata only; no ticket text, usernames, emails, or credentials exported.",
+  "sqlite_tables": [
+    "auth_sessions",
+    "response_feedback",
+    "sqlite_sequence",
+    "tickets",
+    "users"
+  ],
+  "tables": {
+    "auth_sessions": {
+      "row_count": 2,
+      "columns": [
+        "token_hash",
+        "user_id",
+        "created_at"
+      ]
+    },
+    "response_feedback": {
+      "row_count": 1,
+      "columns": [
+        "id",
+        "issue",
+        "ai_response",
+        "rating",
+        "comment",
+        "created_at"
+      ]
+    },
+    "sqlite_sequence": {
+      "row_count": 3,
+      "columns": [
+        "name",
+        "seq"
+      ]
+    },
+    "tickets": {
+      "row_count": 5,
+      "columns": [
+        "id",
+        "ticket_id",
+        "title",
+        "description",
+        "category",
+        "priority",
+        "status",
+        "ai_summary",
+        "created_at",
+        "updated_at",
+        "sentiment",
+        "urgency",
+        "escalation_required",
+        "analysis_reason",
+        "recommended_action",
+        "owner_user_id"
+      ]
+    },
+    "users": {
+      "row_count": 3,
+      "columns": [
+        "user_id",
+        "username",
+        "full_name",
+        "password_hash",
+        "role",
+        "is_active",
+        "created_at"
+      ]
+    }
+  },
+  "tickets": {
+    "row_count": 5,
+    "columns": [
+      "ai_summary",
+      "analysis_reason",
+      "category",
+      "created_at",
+      "description",
+      "escalation_required",
+      "id",
+      "owner_user_id",
+      "priority",
+      "recommended_action",
+      "sentiment",
+      "status",
+      "ticket_id",
+      "title",
+      "updated_at",
+      "urgency"
+    ],
+    "category_distribution": [
+      {
+        "value": "Network Connectivity",
+        "count": 5
+      }
+    ],
+    "priority_distribution": [
+      {
+        "value": "Medium",
+        "count": 5
+      }
+    ],
+    "status_distribution": [
+      {
+        "value": "Open",
+        "count": 2
+      },
+      {
+        "value": "Resolved",
+        "count": 2
+      },
+      {
+        "value": "Closed",
+        "count": 1
+      }
+    ],
+    "sentiment_distribution": [
+      {
+        "value": "Neutral",
+        "count": 5
+      }
+    ],
+    "urgency_distribution": [
+      {
+        "value": "Medium",
+        "count": 5
+      }
+    ],
+    "null_counts": {
+      "ticket_id": 0,
+      "title": 0,
+      "description": 0,
+      "category": 0,
+      "priority": 0,
+      "status": 0
+    },
+    "duplicate_ticket_ids": 0,
+    "created_at_min": "2026-11-03 09:31:01",
+    "created_at_max": "2026-11-03 13:09:28"
+  },
+  "knowledge_base": {
+    "directory": "C:\\Users\\jaygu\\OneDrive\\Desktop\\AI_ITSM_Helpdesk\\data",
+    "txt_document_count": 1,
+    "total_characters": 4252,
+    "total_words_approx": 532,
+    "empty_document_count": 0,
+    "unique_content_hashes": 1,
+    "duplicate_content_count": 0
+  }
+}

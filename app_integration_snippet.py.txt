@@ -1,0 +1,52 @@
+# PHASE 9.1 — RAG RETRIEVAL EVALUATION DASHBOARD
+# Add this section near the bottom of app.py.
+
+from modules.retrieval_evaluator import evaluate_retrieval, load_test_cases
+
+st.divider()
+st.header("🧪 RAG Retrieval Evaluation")
+st.caption("Tests whether expected IT knowledge articles appear in retrieval results.")
+
+with st.expander("Prepare the evaluation dataset"):
+    st.markdown("""
+    1. Open `data/retrieval_test_cases.json`.
+    2. Replace every `REPLACE_WITH_...` with the exact TXT source filename.
+    3. Add representative questions for important IT support topics.
+    4. Rebuild the knowledge base after editing source articles.
+    """)
+
+try:
+    evaluation_cases = load_test_cases()
+    if st.button("▶️ Run Retrieval Evaluation", key="run_rag_eval"):
+        with st.spinner("Running retrieval tests..."):
+            metrics, evaluation_rows = evaluate_retrieval(evaluation_cases, top_k=3)
+
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Test Queries", metrics["total_queries"])
+        c2.metric("Recall@3", f'{metrics["recall@3"] * 100:.1f}%')
+        c3.metric("MRR", f'{metrics["mrr"]:.3f}')
+        c4.metric("Precision@3", f'{metrics["precision@3"] * 100:.1f}%')
+
+        st.markdown("""
+        **Recall@3:** percent of queries with at least one expected article in top 3.
+        **MRR:** rewards expected articles appearing higher in the result list.
+        **Precision@3:** share of retrieved source entries matching an expected source.
+        """)
+        evaluation_df = pd.DataFrame(evaluation_rows)
+        st.subheader("Query-by-query results")
+        st.dataframe(evaluation_df, use_container_width=True, hide_index=True)
+        st.download_button(
+            "⬇️ Download Evaluation Results (CSV)",
+            data=evaluation_df.to_csv(index=False).encode("utf-8"),
+            file_name="rag_retrieval_evaluation.csv",
+            mime="text/csv"
+        )
+        if metrics["recall@3"] >= 0.80:
+            st.success("Baseline retrieval is strong (Recall@3 ≥ 80%).")
+        else:
+            st.warning(
+                "Some expected articles are missing from the top 3. Review failed "
+                "queries and improve article content, titles, or chunking before tuning retrieval."
+            )
+except Exception as error:
+    st.error(f"Could not load or run retrieval evaluation: {error}")

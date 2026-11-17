@@ -1,0 +1,38 @@
+[
+    {
+        "query": "I cannot connect to the company VPN. What should I check?",
+        "expected_sources": [
+            "REPLACE_WITH_YOUR_VPN_ARTICLE.txt"
+        ]
+    },
+    {
+        "query": "My Windows laptop is running very slowly. How can I troubleshoot it?",
+        "expected_sources": [
+            "REPLACE_WITH_YOUR_SLOW_PC_ARTICLE.txt"
+        ]
+    },
+    {
+        "query": "I forgot my password and need to reset it.",
+        "expected_sources": [
+            "REPLACE_WITH_YOUR_PASSWORD_RESET_ARTICLE.txt"
+        ]
+    },
+    {
+        "query": "The printer is connected but nothing is printing.",
+        "expected_sources": [
+            "REPLACE_WITH_YOUR_PRINTER_ARTICLE.txt"
+        ]
+    },
+    {
+        "query": "I am unable to access the internet on my office computer.",
+        "expected_sources": [
+            "REPLACE_WITH_YOUR_NETWORK_ARTICLE.txt"
+        ]
+    },
+    {
+        "query": "I received a suspicious email asking for my login details.",
+        "expected_sources": [
+            "REPLACE_WITH_YOUR_PHISHING_ARTICLE.txt"
+        ]
+    }
+]

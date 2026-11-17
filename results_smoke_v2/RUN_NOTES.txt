@@ -1,0 +1,19 @@
+Evaluation run summary
+======================
+Rows evaluated/saved: 3
+Model: openai/gpt-oss-20b
+Classifier/analyzer priority mapping used: {'P1': 'Critical', 'P2': 'High', 'P3': 'Medium', 'P4': 'Low'}
+
+Files:
+- predictions.csv: row-level model outputs and errors
+- summary_metrics.csv: aggregate accuracy, macro precision/recall/F1
+- per_class_metrics.csv: per-label precision/recall/F1/support
+- confusion_*.csv: confusion matrices
+
+Research cautions:
+1. The input dataset is synthetic. Describe results as a synthetic pilot.
+2. Have two independent reviewers validate/adjudicate expected labels before treating them as gold labels.
+3. Confirm the P1-P4 mapping with reviewers/supervisor. Do not silently assume equivalence.
+4. Report failed API calls and missing predictions; do not silently drop failures from the study.
+5. This script measures model outputs on isolated scenarios. It does not measure full RAG response quality.
+6. The script makes two live Groq calls per scenario and may incur API usage/cost.

@@ -1,0 +1,23 @@
+Task,Label,Precision,Recall,F1,Support
+Classifier category,Network Connectivity,1.0,1.0,1.0,3.0
+Classifier category,macro avg,1.0,1.0,1.0,3.0
+Classifier category,weighted avg,1.0,1.0,1.0,3.0
+Classifier priority,Low,0.0,0.0,0.0,3.0
+Classifier priority,Medium,0.0,0.0,0.0,0.0
+Classifier priority,macro avg,0.0,0.0,0.0,3.0
+Classifier priority,weighted avg,0.0,0.0,0.0,3.0
+Analyzer sentiment,Neutral,0.6666666666666666,1.0,0.8,2.0
+Analyzer sentiment,Satisfied,0.0,0.0,0.0,1.0
+Analyzer sentiment,macro avg,0.3333333333333333,0.5,0.4,3.0
+Analyzer sentiment,weighted avg,0.4444444444444444,0.6666666666666666,0.5333333333333333,3.0
+Analyzer urgency,Low,0.0,0.0,0.0,3.0
+Analyzer urgency,Medium,0.0,0.0,0.0,0.0
+Analyzer urgency,macro avg,0.0,0.0,0.0,3.0
+Analyzer urgency,weighted avg,0.0,0.0,0.0,3.0
+Analyzer priority mapped,Low,0.0,0.0,0.0,3.0
+Analyzer priority mapped,Medium,0.0,0.0,0.0,0.0
+Analyzer priority mapped,macro avg,0.0,0.0,0.0,3.0
+Analyzer priority mapped,weighted avg,0.0,0.0,0.0,3.0
+Analyzer escalation,False,1.0,1.0,1.0,3.0
+Analyzer escalation,macro avg,1.0,1.0,1.0,3.0
+Analyzer escalation,weighted avg,1.0,1.0,1.0,3.0

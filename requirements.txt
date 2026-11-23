@@ -1,6 +1,8 @@
+
 streamlit
 groq
 python-dotenv
 chromadb
 sentence-transformers
 pandas
+streamlit-cookies-manager
